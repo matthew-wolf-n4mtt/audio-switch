@@ -1,0 +1,601 @@
+MPLINK 4.43, Linker
+Linker Map File - Created Fri Feb 15 17:17:39 2013
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_1       code   0x000000    program   0x000a6e
+                   .cinit    romdata   0x000537    program   0x000004
+                    .code       code   0x000539    program   0x000452
+                   LCDLIB       code   0x000762    program   0x00009e
+.config_8007_AUDIO-SWITCH.O       code   0x008007    program   0x000002
+.config_8008_AUDIO-SWITCH.O       code   0x008008    program   0x000002
+                   .org_0       code   0x00f000    program   0x000008
+                   .udata      udata   0x000620       data   0x000013
+                  _DELOV2      udata   0x000633       data   0x000002
+                  _DELOV1      udata   0x000635       data   0x000002
+                  _LCDOV1      udata   0x000637       data   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x0007b0      
+                            0x008007    0x008008      
+                            0x00f000    0x00f003      
+            1975 out of 16647 program addresses used, program memory utilization is 11%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    A_Mux   0x000333    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    B_Mux   0x000338    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  ComRecA   0x000167    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  ComRecB   0x000169    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  ComRecE   0x00016b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  ComRecL   0x000163    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  ComRecR   0x000165    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 CommandA   0x000105    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA0   0x0001e3    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA1   0x0001ea    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA2   0x0001f1    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA3   0x0001f8    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA4   0x0001ff    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA5   0x000206    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA6   0x00020d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA7   0x000214    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             CommandAExit   0x00021b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 CommandB   0x00012b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB0   0x00021e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB1   0x000225    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB2   0x00022c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB3   0x000233    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB4   0x00023a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB5   0x000241    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB6   0x000248    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB7   0x00024f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             CommandBExit   0x000256    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 CommandL   0x0000b9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL0   0x00016d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL1   0x000174    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL2   0x00017b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL3   0x000182    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL4   0x000189    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL5   0x000190    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL6   0x000197    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL7   0x00019e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             CommandLExit   0x0001a5    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+              CommandMode   0x0000a4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 CommandR   0x0000df    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR0   0x0001a8    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR1   0x0001af    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR2   0x0001b6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR3   0x0001bd    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR4   0x0001c4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR5   0x0001cb    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR6   0x0001d2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR7   0x0001d9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             CommandRExit   0x0001e0    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   DATAEE   0x00f000    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   Del2ms   0x00076b    program     extern LCDlib\LCDlib\Del2ms.asm 
+                  Del40us   0x000773    program     extern LCDlib\LCDlib\Del40us.asm
+                 Dis1Name   0x00061e    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                Dis1NameS   0x00061f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                 Dis2Name   0x000626    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                Dis2NameS   0x000627    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                DisInName   0x0005a5    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               DisInNameS   0x0005a7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                 DisLName   0x00060e    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                DisLNameS   0x00060f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              DisOutInDiv   0x00062e    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               DisPortDiv   0x000632    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                 DisRName   0x000616    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                DisRNameS   0x000617    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           EEPROM_A_Write   0x00049c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+           EEPROM_B_Write   0x0004b0    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+           EEPROM_L_Write   0x000474    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+           EEPROM_R_Write   0x000488    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   EEREAD   0x0003fc    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+              EndLedB1Dim   0x00052f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+         EndSerialDisplay   0x00067f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           ErrSerialFrame   0x00025d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+           ErrSerialOverr   0x000259    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+            FullBackLight   0x000530    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 I2CSetup   0x000343    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               Input1Name   0x0005cc    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input1NameT   0x0005ce    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input1NameTs   0x000555    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input1NumTs   0x00058d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input2NameT   0x0005d6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input2NameTs   0x00055c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input2NumTs   0x000590    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input3NameT   0x0005de    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input3NameTs   0x000563    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input3NumTs   0x000593    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input4NameT   0x0005e6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input4NameTs   0x00056a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input4NumTs   0x000596    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input5NameT   0x0005ee    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input5NameTs   0x000571    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input5NumTs   0x000599    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input6NameT   0x0005f6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input6NameTs   0x000578    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input6NumTs   0x00059c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input7NameT   0x0005fe    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input7NameTs   0x00057f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input7NumTs   0x00059f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input8NameT   0x000606    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input8NameTs   0x000586    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input8NumTs   0x0005a2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                 LCDLine1   0x000404    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 LCDLine2   0x000410    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  LCDaddr   0x000762    program     extern LCDlib\LCDlib\LCDaddr.asm
+                   LCDdig   0x000796    program     extern LCDlib\LCDlib\LCDletr.asm
+                  LCDinit   0x00077e    program     extern LCDlib\LCDlib\LCDinit.asm
+                  LCDletr   0x000798    program     extern LCDlib\LCDlib\LCDletr.asm
+                  LCDsend   0x00079f    program     extern LCDlib\LCDlib\LCDsend.asm
+                  LCDsndD   0x0007a7    program     extern LCDlib\LCDlib\LCDsnd.asm 
+                  LCDsndI   0x0007aa    program     extern LCDlib\LCDlib\LCDsnd.asm 
+                    L_Mux   0x000329    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 LedBlDim   0x00050a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     Loop   0x000038    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS1   0x0003ec    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS2   0x0003ee    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS3   0x0003f0    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS4   0x0003f2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS5   0x0003f4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS6   0x0003f6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS7   0x0003f8    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS8   0x0003fa    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 MuxSetup   0x00033d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             Mux_Port_Num   0x0003c9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_A_Count   0x000448    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             PB_A_wasDown   0x000451    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_A_wasUp   0x00044d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_B_Count   0x00045e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             PB_B_wasDown   0x000467    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_B_wasUp   0x000463    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_L_Count   0x00041c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             PB_L_wasDown   0x000425    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_L_wasUp   0x000421    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_R_Count   0x000432    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             PB_R_wasDown   0x00043b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_R_wasUp   0x000437    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               Port1NameT   0x000547    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Port1NameTs   0x00054b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               Port2NameT   0x00054e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Port2NameTs   0x000552    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               PortLNameT   0x000539    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              PortLNameTs   0x00053d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               PortRNameT   0x000540    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              PortRNameTs   0x000544    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                    R_Mux   0x00032e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecA   0x00015d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecB   0x00015f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecI   0x000161    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    RecIN   0x000157    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecL   0x000159    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecP   0x000155    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecR   0x00015b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecS   0x000151    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               RecSerStat   0x000153    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+              ReceiveSer1   0x000071    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+            ReceiveSerial   0x000068    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  STARTUP   0x000000    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 SerComma   0x00067b    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerDis1Name   0x00065a    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDis1NameS   0x00065c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerDis2Name   0x000665    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDis2NameS   0x000667    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDisInName   0x000680    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerDisInNameS   0x000682    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerDisInNum   0x0006f1    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDisInNumS   0x0006f3    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerDisLName   0x000644    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDisLNameS   0x000646    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerDisPortDiv   0x000674    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerDisRName   0x00064f    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDisRNameS   0x000651    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput1Name   0x0006a7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput1NameT   0x0006a9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerInput1Num   0x000718    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput1NumT   0x00071a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput2NameT   0x0006b2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput2NumT   0x000723    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput3NameT   0x0006bb    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput3NumT   0x00072c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput4NameT   0x0006c4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput4NumT   0x000735    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput5NameT   0x0006cd    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput5NumT   0x00073e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput6NameT   0x0006d6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput6NumT   0x000747    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput7NameT   0x0006df    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput7NumT   0x000750    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput8NameT   0x0006e8    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput8NumT   0x000759    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               SerNewLine   0x00063d    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerOutInDiv   0x000670    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                  SerialA   0x000313    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  SerialB   0x00031e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+          SerialInDisplay   0x0002ba    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  SerialL   0x0002fd    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+        SerialPortDisplay   0x00029f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  SerialR   0x000308    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  SerialS   0x000260    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+           SerialSendChar   0x000637    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerialSetup   0x000055    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+      SerialStatusDisplay   0x00027c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    Start   0x000003    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+              _.code_0100   0x000639    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             _.org_1_0354   0x000354    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_035C   0x00035c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_035F   0x00035f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0364   0x000364    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_036C   0x00036c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0371   0x000371    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0377   0x000377    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_037A   0x00037a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_037F   0x00037f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0387   0x000387    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_038C   0x00038c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0392   0x000392    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0395   0x000395    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_039A   0x00039a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03A2   0x0003a2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03A7   0x0003a7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03AD   0x0003ad    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03B0   0x0003b0    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03B5   0x0003b5    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03BD   0x0003bd    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03C2   0x0003c2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03C7   0x0003c7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0486   0x000486    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_049A   0x00049a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_04AE   0x0004ae    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_04C2   0x0004c2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_04E9   0x0004e9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_04F2   0x0004f2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_04F9   0x0004f9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0500   0x000500    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_050F   0x00050f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0518   0x000518    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0521   0x000521    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_052A   0x00052a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _LCDLIB_0002   0x0007a9    program     static LCDlib\LCDlib\LCDsnd.asm 
+             _LCDLIB_0008   0x000786    program     static LCDlib\LCDlib\LCDinit.asm
+        i2c_SendADataByte   0x00039c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+       i2c_SendAMuxWrAddr   0x00038e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+        i2c_SendBDataByte   0x0003b7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+       i2c_SendBMuxWrAddr   0x0003a9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+        i2c_SendLDataByte   0x000366    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+       i2c_SendLMuxWrAddr   0x000358    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+        i2c_SendRDataByte   0x000381    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+       i2c_SendRMuxWrAddr   0x000373    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 i2c_Stop   0x0003c4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                i2c_start   0x000351    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 init_pwm   0x0004c4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+              init_timer0   0x0004d3    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    jloop   0x000775    program     static LCDlib\LCDlib\Del40us.asm
+                    kloop   0x000776    program     static LCDlib\LCDlib\Del40us.asm
+                    lloop   0x00076d    program     static LCDlib\LCDlib\Del2ms.asm 
+                    mloop   0x00076e    program     static LCDlib\LCDlib\Del2ms.asm 
+                time_loop   0x0004e7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     Addr   0x000637       data     static LCDlib\LCDlib\LCDaddr.asm
+                  BlFlags   0x000629       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  Buttons   0x000624       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     CHAR   0x000632       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                  CharIdx   0x000630       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             CommandFlags   0x00062b       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    Count   0x000637       data     static LCDlib\LCDlib\LCDinit.asm
+                    Flags   0x000628       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                MuxSource   0x000627       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   NumMin   0x00062f       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   NumSec   0x00062e       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 NumThSec   0x00062d       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 PB_State   0x000625       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PortACount   0x000622       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PortBCount   0x000623       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  PortIdx   0x000631       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               PortLCount   0x000620       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PortRCount   0x000621       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   RFlags   0x00062a       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   RXData   0x000626       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     Save   0x000637       data     static LCDlib\LCDlib\LCDsend.asm
+                 SaveLetr   0x000637       data     static LCDlib\LCDlib\LCDletr.asm
+               TimerCount   0x00062c       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 _DELV001   0x000635       data     static LCDlib\LCDlib\Del40us.asm
+                 _DELV002   0x000636       data     static LCDlib\LCDlib\Del40us.asm
+                 _DELV003   0x000633       data     static LCDlib\LCDlib\Del2ms.asm 
+                 _DELV004   0x000634       data     static LCDlib\LCDlib\Del2ms.asm 
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  STARTUP   0x000000    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    Start   0x000003    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     Loop   0x000038    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+              SerialSetup   0x000055    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+            ReceiveSerial   0x000068    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+              ReceiveSer1   0x000071    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+              CommandMode   0x0000a4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 CommandL   0x0000b9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 CommandR   0x0000df    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 CommandA   0x000105    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 CommandB   0x00012b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecS   0x000151    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               RecSerStat   0x000153    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecP   0x000155    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    RecIN   0x000157    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecL   0x000159    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecR   0x00015b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecA   0x00015d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecB   0x00015f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                     RecI   0x000161    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  ComRecL   0x000163    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  ComRecR   0x000165    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  ComRecA   0x000167    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  ComRecB   0x000169    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  ComRecE   0x00016b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL0   0x00016d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL1   0x000174    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL2   0x00017b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL3   0x000182    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL4   0x000189    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL5   0x000190    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL6   0x000197    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandL7   0x00019e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             CommandLExit   0x0001a5    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR0   0x0001a8    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR1   0x0001af    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR2   0x0001b6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR3   0x0001bd    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR4   0x0001c4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR5   0x0001cb    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR6   0x0001d2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandR7   0x0001d9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             CommandRExit   0x0001e0    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA0   0x0001e3    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA1   0x0001ea    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA2   0x0001f1    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA3   0x0001f8    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA4   0x0001ff    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA5   0x000206    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA6   0x00020d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandA7   0x000214    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             CommandAExit   0x00021b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB0   0x00021e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB1   0x000225    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB2   0x00022c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB3   0x000233    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB4   0x00023a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB5   0x000241    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB6   0x000248    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                CommandB7   0x00024f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             CommandBExit   0x000256    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+           ErrSerialOverr   0x000259    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+           ErrSerialFrame   0x00025d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  SerialS   0x000260    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+      SerialStatusDisplay   0x00027c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+        SerialPortDisplay   0x00029f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+          SerialInDisplay   0x0002ba    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  SerialL   0x0002fd    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  SerialR   0x000308    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  SerialA   0x000313    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  SerialB   0x00031e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    L_Mux   0x000329    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    R_Mux   0x00032e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    A_Mux   0x000333    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    B_Mux   0x000338    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 MuxSetup   0x00033d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 I2CSetup   0x000343    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                i2c_start   0x000351    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0354   0x000354    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+       i2c_SendLMuxWrAddr   0x000358    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_035C   0x00035c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_035F   0x00035f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0364   0x000364    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+        i2c_SendLDataByte   0x000366    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_036C   0x00036c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0371   0x000371    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+       i2c_SendRMuxWrAddr   0x000373    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0377   0x000377    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_037A   0x00037a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_037F   0x00037f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+        i2c_SendRDataByte   0x000381    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0387   0x000387    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_038C   0x00038c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+       i2c_SendAMuxWrAddr   0x00038e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0392   0x000392    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0395   0x000395    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_039A   0x00039a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+        i2c_SendADataByte   0x00039c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03A2   0x0003a2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03A7   0x0003a7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+       i2c_SendBMuxWrAddr   0x0003a9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03AD   0x0003ad    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03B0   0x0003b0    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03B5   0x0003b5    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+        i2c_SendBDataByte   0x0003b7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03BD   0x0003bd    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03C2   0x0003c2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 i2c_Stop   0x0003c4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_03C7   0x0003c7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             Mux_Port_Num   0x0003c9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS1   0x0003ec    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS2   0x0003ee    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS3   0x0003f0    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS4   0x0003f2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS5   0x0003f4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS6   0x0003f6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS7   0x0003f8    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    MUXS8   0x0003fa    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   EEREAD   0x0003fc    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 LCDLine1   0x000404    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 LCDLine2   0x000410    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_L_Count   0x00041c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_L_wasUp   0x000421    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             PB_L_wasDown   0x000425    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_R_Count   0x000432    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_R_wasUp   0x000437    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             PB_R_wasDown   0x00043b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_A_Count   0x000448    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_A_wasUp   0x00044d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             PB_A_wasDown   0x000451    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_B_Count   0x00045e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PB_B_wasUp   0x000463    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             PB_B_wasDown   0x000467    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+           EEPROM_L_Write   0x000474    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0486   0x000486    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+           EEPROM_R_Write   0x000488    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_049A   0x00049a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+           EEPROM_A_Write   0x00049c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_04AE   0x0004ae    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+           EEPROM_B_Write   0x0004b0    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_04C2   0x0004c2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 init_pwm   0x0004c4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+              init_timer0   0x0004d3    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                time_loop   0x0004e7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_04E9   0x0004e9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_04F2   0x0004f2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_04F9   0x0004f9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0500   0x000500    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 LedBlDim   0x00050a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_050F   0x00050f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0518   0x000518    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_0521   0x000521    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             _.org_1_052A   0x00052a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+              EndLedB1Dim   0x00052f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+            FullBackLight   0x000530    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PortLNameT   0x000539    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              PortLNameTs   0x00053d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               PortRNameT   0x000540    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              PortRNameTs   0x000544    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               Port1NameT   0x000547    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Port1NameTs   0x00054b    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               Port2NameT   0x00054e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Port2NameTs   0x000552    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input1NameTs   0x000555    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input2NameTs   0x00055c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input3NameTs   0x000563    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input4NameTs   0x00056a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input5NameTs   0x000571    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input6NameTs   0x000578    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input7NameTs   0x00057f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             Input8NameTs   0x000586    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input1NumTs   0x00058d    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input2NumTs   0x000590    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input3NumTs   0x000593    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input4NumTs   0x000596    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input5NumTs   0x000599    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input6NumTs   0x00059c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input7NumTs   0x00059f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input8NumTs   0x0005a2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                DisInName   0x0005a5    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               DisInNameS   0x0005a7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               Input1Name   0x0005cc    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input1NameT   0x0005ce    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input2NameT   0x0005d6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input3NameT   0x0005de    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input4NameT   0x0005e6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input5NameT   0x0005ee    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input6NameT   0x0005f6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input7NameT   0x0005fe    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              Input8NameT   0x000606    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                 DisLName   0x00060e    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                DisLNameS   0x00060f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                 DisRName   0x000616    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                DisRNameS   0x000617    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                 Dis1Name   0x00061e    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                Dis1NameS   0x00061f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                 Dis2Name   0x000626    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                Dis2NameS   0x000627    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              DisOutInDiv   0x00062e    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               DisPortDiv   0x000632    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerialSendChar   0x000637    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              _.code_0100   0x000639    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+               SerNewLine   0x00063d    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerDisLName   0x000644    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDisLNameS   0x000646    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerDisRName   0x00064f    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDisRNameS   0x000651    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerDis1Name   0x00065a    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDis1NameS   0x00065c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerDis2Name   0x000665    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDis2NameS   0x000667    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerOutInDiv   0x000670    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerDisPortDiv   0x000674    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                 SerComma   0x00067b    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+         EndSerialDisplay   0x00067f    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDisInName   0x000680    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerDisInNameS   0x000682    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput1Name   0x0006a7    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput1NameT   0x0006a9    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput2NameT   0x0006b2    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput3NameT   0x0006bb    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput4NameT   0x0006c4    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput5NameT   0x0006cd    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput6NameT   0x0006d6    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput7NameT   0x0006df    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+           SerInput8NameT   0x0006e8    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+              SerDisInNum   0x0006f1    program     extern C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerDisInNumS   0x0006f3    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+             SerInput1Num   0x000718    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput1NumT   0x00071a    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput2NumT   0x000723    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput3NumT   0x00072c    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput4NumT   0x000735    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput5NumT   0x00073e    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput6NumT   0x000747    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput7NumT   0x000750    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+            SerInput8NumT   0x000759    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                  LCDaddr   0x000762    program     extern LCDlib\LCDlib\LCDaddr.asm
+                   Del2ms   0x00076b    program     extern LCDlib\LCDlib\Del2ms.asm 
+                    lloop   0x00076d    program     static LCDlib\LCDlib\Del2ms.asm 
+                    mloop   0x00076e    program     static LCDlib\LCDlib\Del2ms.asm 
+                  Del40us   0x000773    program     extern LCDlib\LCDlib\Del40us.asm
+                    jloop   0x000775    program     static LCDlib\LCDlib\Del40us.asm
+                    kloop   0x000776    program     static LCDlib\LCDlib\Del40us.asm
+                  LCDinit   0x00077e    program     extern LCDlib\LCDlib\LCDinit.asm
+             _LCDLIB_0008   0x000786    program     static LCDlib\LCDlib\LCDinit.asm
+                   LCDdig   0x000796    program     extern LCDlib\LCDlib\LCDletr.asm
+                  LCDletr   0x000798    program     extern LCDlib\LCDlib\LCDletr.asm
+                  LCDsend   0x00079f    program     extern LCDlib\LCDlib\LCDsend.asm
+                  LCDsndD   0x0007a7    program     extern LCDlib\LCDlib\LCDsnd.asm 
+             _LCDLIB_0002   0x0007a9    program     static LCDlib\LCDlib\LCDsnd.asm 
+                  LCDsndI   0x0007aa    program     extern LCDlib\LCDlib\LCDsnd.asm 
+                   DATAEE   0x00f000    program     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PortLCount   0x000620       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PortRCount   0x000621       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PortACount   0x000622       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               PortBCount   0x000623       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  Buttons   0x000624       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 PB_State   0x000625       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   RXData   0x000626       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                MuxSource   0x000627       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                    Flags   0x000628       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  BlFlags   0x000629       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   RFlags   0x00062a       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+             CommandFlags   0x00062b       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+               TimerCount   0x00062c       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                 NumThSec   0x00062d       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   NumSec   0x00062e       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                   NumMin   0x00062f       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\Audio-Switch.asm
+                  CharIdx   0x000630       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                  PortIdx   0x000631       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                     CHAR   0x000632       data     static C:\Users\Matthew\Documents\PIC Projects\Audio-Switch-mk2\DisLCD.asm
+                 _DELV003   0x000633       data     static LCDlib\LCDlib\Del2ms.asm 
+                 _DELV004   0x000634       data     static LCDlib\LCDlib\Del2ms.asm 
+                 _DELV001   0x000635       data     static LCDlib\LCDlib\Del40us.asm
+                 _DELV002   0x000636       data     static LCDlib\LCDlib\Del40us.asm
+                 SaveLetr   0x000637       data     static LCDlib\LCDlib\LCDletr.asm
+                     Save   0x000637       data     static LCDlib\LCDlib\LCDsend.asm
+                    Count   0x000637       data     static LCDlib\LCDlib\LCDinit.asm
+                     Addr   0x000637       data     static LCDlib\LCDlib\LCDaddr.asm
+
+
