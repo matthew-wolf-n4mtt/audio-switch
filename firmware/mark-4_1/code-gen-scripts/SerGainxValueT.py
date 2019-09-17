@@ -1,0 +1,16 @@
+x = 0,
+
+for i in range(0,256):
+    print  "SerGain%sValueT\n" % i,
+    print  "		movf		GainCharIdx,W\n",
+    print  "		pagesel		Gain%sTs\n" % i,
+    print  "		call		Gain%sTs\n" % i, 
+    print  "		xorlw		H'00'			; Test to see if char is Zero\n",
+    print  "		btfsc		STATUS,Z		; Was it Zero?\n",
+    print  "		return	\n",
+    print  "		pagesel		SerialSendChar\n",
+    print  "		call		SerialSendChar		; Display Chr on LCD\n",
+    print  "		banksel		GainCharIdx\n",
+    print  "		incf		GainCharIdx,F		; Point to the next char\n",
+    print  "		pagesel		Gain%sValueT\n" % i,
+    print  "		goto		Gain%sValueT\n\n" % i, 		
