@@ -1,4 +1,6 @@
-16-SEP-2019 Matthew J. Wolf Email: matthew.wolf at speciosus.net
+06-OCT-2019 Matthew J. Wolf Email: matthew.wolf at speciosus.net
+
+This a project for an audio switch with 8 input channels and 4 output channels.
 
 Firmware to Hardware
 --------------------
@@ -12,7 +14,7 @@ FW version 2
 - HW version 1
 
 FW version 3
-- HW version 2 
+- HW version 2
 - HW version 2a
 
 FW version 4
@@ -23,3 +25,329 @@ FW version 4.1
 - HW version 2c
 !! Gain at max when reset     !!
 !! Gain not restored at reset !!
+
+
+Hardware Versions
+-----------------
+!!!! WARNING !!!! - This is a first draft. It is full of marginal English.
+
+Current Hardware:
+
+The current hardware is version 2c with the hardware version 3 power supply
+that uses a DC to DC power converter.
+
+
+Version 0:
+
+The project started as I just wanted to build something to be able to listen
+to all my radio receivers. 
+
+This hardware version was not build. Its only a schematic drawing.
+
+My list of needs: 
+ - 8 input channels
+ - 4 output channels
+ - LCD status display
+ - Push button control
+ - RS 232 control 
+ - Control of LCD back-light
+ - RF isolation on the audio input channels. 
+
+I chose the Microchip PIC pic16f1938 micro-controller for the project. The
+micro-controller controls the LCD display back light via a FDS6612 N-Channel
+MOSFET. 
+
+Each of the output audio channels used a Analog Devices ADG728 I2C controlled
+matrix switch. Each matrix switch was connected to each input channel. 
+
+Each input channel was isolated via a audio line transformer.
+
+RS232 control was accomplished via the micro-controller's UART and a MAX232
+driver receiver.
+
+There are four momentary buttons that are not shown of the schematic. They
+connect to connector J7.
+
+Version 1:
+
+The version 1 hardware is version 0 with a few additions to aide the building
+of the audio switch. 
+
+A PCB was laid out for this hardware version. PCB's where manufactured and
+filled with components. 
+
+
+To reduce the the size and cost of the PCB, the audio input and output 
+connectors and input transformers where not placed on the PCB. A "audio" board
+was build on 0.100 inch prototyping board. The transformers used where
+Bourns LM-LP-1001L.
+
+Firmware versions 1 and 2 run on the version 1 hardware.
+
+
+Version 2:
+
+The version 1 hardware suffered from my attitude of "just build some thing".
+I did not fully review the data sheet for the ADG728 switch. At moderate audio
+voltages the input isolation was poor. There was audible cross-talk between the
+inputs. I had to find a different way to switch the inputs.
+
+Each of ADG728 was replaced with Maxim's MAX4584 and MAX4586 products. 
+
+The ADG728 is a 8 input mux. The MAX4584 is a 2 input mux and the MAX4586 is a 
+4 input mux. The older mux was replaced with one MAX4584 and two MAX4586. The 
+first four input are connected to the first MAX4586. The last four inputs are
+connected to the second MAX4586. The MAX4584 switches between the two MAX4586. 
+
+Each output channel has one MAX4584 and two MAX4586.
+
+The MAX4584 and MAX4586 only have two possible I2C addresses. This has the 
+affect that each output's set of mux chips have to separate I2C buses.
+
+The pic16f1938 micro-controller does not have 4 I2C buses. I used a NXP 
+Semiconductor PCA9547 I2C multiplexer to separate the output I2C buses.
+The micro-controller's I2C peripheral sends a command to the I2C multiplexer
+to connect to the needed output's I2C buss. The multiplexer by design only
+bridges to one output I2C buss at a time.    
+
+A PCB was laid out for the Maxim muxes. PCB's where manufactured and
+filled with components. The MAX4584 and MAX4586 use Maxim's uMAX surface mount
+footprint. The footprint has a very small pin pitch. 
+
+Firmware version 3 runs on the version 2 hardware. 
+
+
+Version 2a:
+
+I upgraded the computer sound interface in my "radio" computer. It had balanced audio input and output. I thought lets add balanced audio to the audio switch.
+
+Version 2a is the design of the balanced audio transmitter and receiver I added
+to the audio switch. The hardware version is a add on to the version 2 hardware. 
+The balanced audio transmitter uses a THAT Corporation THAT1646 balanced Line 
+Driver. A Texas Instruments OPA227 opamp is used a buffer amp to provide the
+THAT1646 the correct input impedance. The remainder of the design is based on 
+the design in the THAT1646 data-sheet that includes RFI and surge protection. 
+The RFI protection is needed. The line driver is going to be used in an RF 
+environment. 
+
+The balanced audio receiver uses a THAT Corporation THAT1240 series 
+differential amplifier. The primary use of the THAT1240 is as a balanced audio. 
+line receiver. The design is based on the RFI and supply bypassing design in  
+the THAT1240 data-sheet. I add the ferrite beads for EMI and RFI filtering.
+This audio receiver is going to be used in an RF environment. The schematic 
+shows the design using a THAT1240 with 0dB gain. I found that using a THAT1243
+with -3dB gain a better match for my use.  
+
+The balanced audio transmitter and receiver needed bipolar voltages. The
+circuits needed the positive 12 volts DC I had been proving the earlier
+hardware and its inverse -12 volts DC. I added a voltage inverter with a 
+MC34063 switching inverting regulator.
+
+My ears did not hear any noise from the MC34063. I believe the noise was within
+the Power Supply Rejection Ratio (PSRR) of the THAT1646 and THAT1240.
+
+I build two of each of the balanced audio transmitters and receivers on 0.100 
+inch prototyping board. The transmitters there placed in parallel with the
+single ended audio outputs labeled L and R. The receivers there placed in
+parallel with two of the single ended audio inputs. The balanced audio 
+receivers by pass the input isolation transformers.
+
+Starting with hardware design 2a the schematic capture software changed from
+gEDA to KiCad.
+
+There was no digital logic changes with hardware version 2a. This hardware
+version uses the same firmware, 3.
+
+
+Version 2b:
+
+Once I had started to use the balanced audio transmitters and receivers I
+hear noise on the output audio from my radio receivers. Using audio DSP 
+software I discovered that the noise was above the audio bandwidth of the 
+receivers. 
+
+I decided to add a audio low pass filter to remove the noise. A high pass
+filter was not needed. The input isolation transformers act as a high pass
+filter. 
+
+Audio filtering lowers the audio amplitude. I decided the make the audio switch
+and active device by adding an voltage controlled amplifier (VCA). The method
+in this design used for the VCA control does not work. VCA control was
+resolved in hardware version 2c.       
+
+Version 2b is the addition of a low pass filter and a VCA to the version 2
+hardware.  
+
+The audio low pass filter is composed Maxim's MAX270 2nd order low pass filter
+and I2C GPIO. The MAX270 is not a I2C device. The GPIO is used to 
+"digitally-program" the MAX270. The software driver for the MAX270 was added
+to version 4 of the firmware. 
+
+Each MAX270 provides filters for two audio channels. Two MAX270 are used. The
+first filters the L and R output channels. The second MAX270 filters the 1 and
+2 output channel.
+
+The low pass GPIO are on a I2C buss that is isolated from the audio mux I2C
+buses. The micro-controller I2C peripheral is bridged to the GPIO via the
+PCA9547 I2C multiplexer.
+
+I thought the VAC could be controlled using a digital potentiomerter. It
+functions the same as a analog potentiomerter. I quickly discovered that a 
+digital is different that is analog peer. The VAC control voltage design does
+not work! The digital potentiomerter, scaling, and buffering are replaced in 
+the next hardware version.
+
+The VAC utilizes the THAT Corporation THAT2180 series integrated-circuit 
+voltage controlled amplifiers. The first opamp of a Texas Instruments dual
+OPA2227 opamp is used due to the different impedance between the output of the
+MAX270 and the input of the THAT2180. The second OPA2227 opamp is used to 
+convert the current from the THAT2180 into a voltage.  
+  
+Two momentary buttons where added. One button is used to select the low pass 
+cut off frequency. The second button was added to changed the VCA gain.
+
+The low pass filter was build on a 0.100 inch prototyping board. The filters
+where placed in line with the audio outputs. The filters are in front of the
+two balanced audio transmitters.
+ 
+The addition of the I2C GPIO and the digital potentiomerter required a new firmware version. Hardware version 2b uses firmware version 4.
+ 
+Version 2c:
+
+This hardware version corrected VCA control. This hardware version is a add on
+to the version 2 hardware.
+
+The digital potentiomerters where replaced with I2C digital-to-analog
+converters. I chose to use Analog Devices 8 bit AD5337. The DACs allow the VAC
+to provide +27.5 dB to -100 dB of amplification in 0.5dB steps.
+
+The AD5337 is a dual channel DAC. One AD5337 is used to control the 
+amplification of audio output L and R. A second DAC is used for outputs 1 
+and 2. 
+
+The output from the DAC is used as the VAC control voltage. The DAC output has 
+to scaled. The VAC control voltage is O to 1 volt. Where as the DAC output is
+0 to 5 volts. The DAC voltage is scaled by a buffer opamp. The buffers are 
+Texas Instruments Dual TL072 opamps. One TL072 is used for the VCA for audio
+output channels L and R. A second TL072 is used for output channels 1 and 2.
+
+The four VCAs where build on 0.100 inch prototyping board. The VCAs are placed
+in the audio path after the low pass filters. The two balanced audio
+transmitters come after the VCAs.
+
+The VCA does not not have the PSRR of the balanced audio transmitters and
+receivers. The MC34063 added with hardware version 2a is a source of audible
+noise. The hardware 2c schematic includes a power supply that build that did
+not resolve the power noise.  
+
+The DACs could not use the digital potentiomerters software. A new version of 
+firmware was created. Hardware version 3 uses firmware version 4.1.
+
+
+Version 3:
+
+Version 3 hardware is the next incomplete hardware design. 
+
+I have build the power supply that uses the TDK-Lambda PXB15-12D15/N 12 volt DC
+to +15 v and -15v DC to DC converter. The converter provides isolation the 
+removes all most all of the power noise.  
+
+There are issues with the VAC. First when the micro-controller resets the 
+amplification is set to the maximum, +27.5 dB. Second do not need a large 
+range of amplification. I only use a few value of amplification.
+
+I enjoyed designing the VAC. But, I am viewing the VAC is a second system
+affect. Fixing the max at reset will add more complexity. I am thinking of 
+replacing the VCA with a gain stage with a few set values. Removing the VCA
+will free processor program memory.
+
+The processor and mux design has been recaptured in KiCad. 
+
+I need to:
+- Add the balanced audio transmitters receivers to the PCB. 
+- Recapture the low pass filter, part change.
+- Change input transformers to Triad SP-70.
+- Add transform and shields to PCB. Smaller then older transformer.
+
+
+Firmware Versions
+-----------------
+!!!! WARNING !!!! - This is a first draft. It is full of marginal English.
+
+The current firmware version is 4.1.
+
+The firmware uses a hacked version of the LCD library form the PIC Elmer 160
+Project. The project used the PIC-EL series of boards designed by
+Craig Johnson - AA0ZZ  
+
+
+Version 1:
+
+The initial firmware version. 
+
+The push button switching of the input to the output works.
+
+The LCD displays the output and input labels. The input label changes to match
+the selected input.
+
+Basic RS232 input. It matches the button sequential behavior.
+
+Saving and restoring from EEPROM works.
+
+
+Version 1.1:
+
+Control of LCD back light via PWM was added. One of the processor timers use
+to determine when to dim the back light.
+
+
+Version 2:
+
+Due to changes to the RS232 protocol.
+Output 1 renamed to A
+Output 2 renamed to B 
+
+Addition RS232 commands.
+
+i - Command Mode
+I - Display input labels
+s - Display LCD display on RS232
+S - Status - comma list of output and input
+P - Display output labels
+
+l - sequential switch output L 
+r - sequential switch output R
+a - sequential switch output A
+b - sequential switch output B
+
+RS232 Command Mode
+
+1st character: 
+               Output - l,r,a,b
+               Exit command mode - e
+
+2nd character:
+              Input - 0,1,2,3,4,5,6,7
+              Exit command mode - e 
+
+Version 3:
+
+Replace the ADG728 with MAX4584, MAX4586, and PCA9547 I2C multiplexer.
+
+Started manual management of program memory banks.
+
+
+Version 4:
+
+Added low pass filter driver.
+Added digital potentiomerter driver.
+
+!need more details!
+
+
+Version 4.1:
+
+Replaced digital potentiomerter driver with DAC.
+
+!need more details!
+
